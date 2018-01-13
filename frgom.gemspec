@@ -15,4 +15,6 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/dblock/frgom'
   s.licenses = ['MIT']
   s.summary = 'First ruby gem of many.'
+  s.executables << 'frgom'
+  s.add_dependency 'gli'
 end

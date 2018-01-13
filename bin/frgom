@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+
+require 'gli'
+require 'frgom'
+
+include GLI::App
+
+program_desc 'Reticulate splines.'
+
+default_command :help
+
+switch %i[v verbose], desc: 'Produce verbose output.', default_value: false
+
+desc 'Reticulate a spline.'
+command :reticulate do |c|
+  c.flag %i[k kind], desc: 'Kind of spline to reticulate.', default_value: 'Frgom::Splines::B'
+  c.action do |global_options, options, _args|
+    kind = options[:kind].split('::').reduce(Module, :const_get)
+    puts "Reticulating a #{kind} ..." if global_options[:verbose]
+    kind.new.reticulate!
+    exit_now! nil
+  end
+end
+
+exit run(ARGV)

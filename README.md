@@ -23,6 +23,16 @@ spline.reticulate!
 spline.reticulated? # true
 ```
 
+### Command Line Interface
+
+You can reticulate splines on the command line.
+
+```
+frgom --verbose reticulate
+```
+
+Use `frgom help` for detailed syntax.
+
 ## License
 
 Copyright (c) 2018 Daniel Doubrovkine and Contributors
