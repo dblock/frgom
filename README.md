@@ -10,6 +10,19 @@ Install frgom, add the following to Gemfile.
 gem 'frgom'
 ```
 
+### Splines
+
+#### Frgom::Splines::B
+
+This is a B-spline that can be reticulated.
+
+```ruby
+spline = Frgom::Splines::B.new
+spline.reticulated? # false
+spline.reticulate!
+spline.reticulated? # true
+```
+
 ## License
 
 Copyright (c) 2018 Daniel Doubrovkine and Contributors
