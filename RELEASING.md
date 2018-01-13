@@ -50,12 +50,12 @@ Add the next release to [CHANGELOG.md](CHANGELOG.md).
 * Your contribution here.
 ```
 
-Increment the third version number in [lib/google-finance/version.rb](lib/google-finance/version.rb).
+Increment the third version number in [lib/frgom/version.rb](lib/frgom/version.rb).
 
 Commit your changes.
 
 ```
-git add CHANGELOG.md lib/google-finance/version.rb
+git add CHANGELOG.md lib/frgom/version.rb
 git commit -m "Preparing for next development iteration, 0.2.3."
 git push origin master
 ```
