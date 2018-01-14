@@ -1,10 +1,19 @@
-# Flatiron School: Your First Ruby Gem of Many
+# Your First Ruby Gem of Many
 
 [![Build Status](https://travis-ci.org/dblock/frgom.svg?branch=master)](https://travis-ci.org/dblock/frgom)
 
+## What's This?
+
+![Flatiron School](fs.png)
+
+A gem live-coded from scratch at [Flatiron School](https://flatironschool.com) in January, 2018.
+
+* [Slides from the Lecture](SLIDES.pdf)
+* [Live Code Walk Through](LIVE.md)
+
 ## Usage
 
-Install frgom, add the following to Gemfile.
+Install `frgom`, add the following to `Gemfile`.
 
 ```ruby
 gem 'frgom'
